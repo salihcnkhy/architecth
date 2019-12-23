@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1050719672631",
+    "firebase_url": "https://architecht-4897b.firebaseio.com",
+    "project_id": "architecht-4897b",
+    "storage_bucket": "architecht-4897b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050719672631:android:ec2358c073e731287822b2",
+        "android_client_info": {
+          "package_name": "com.example.architech1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050719672631-odgc3n9vsgbhls2qhagna52uk6d99lj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7FYyJqfBu5uN4zArQqOlyToNdq7exxjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050719672631-odgc3n9vsgbhls2qhagna52uk6d99lj6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1050719672631-pnn3bc8k11ea4hv1jubk7i12k0au0m3e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.architech1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

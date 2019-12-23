@@ -2,7 +2,6 @@ import 'package:architech1/Firebase.dart';
 import 'package:flutter/material.dart';
 import '../HomePage.dart';
 import '../Register Screen/registerPageController.dart';
-import '../User.dart';
 import './emailField.dart';
 import './passwordField.dart';
 import './loginButton.dart';

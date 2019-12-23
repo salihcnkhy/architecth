@@ -7,11 +7,10 @@ class Firebase {
   final Firestore _fireStore = Firestore.instance;
   Future<DocumentSnapshot> getDocumentSnapShot(String uid) async {
     return _fireStore.collection("Users").document(uid).get();
-    //TODO BURASI ÖNEMLİ USER1 UID İLE DEĞİŞTİRİLECEK
-    //TODO UID LOGİN VEYA REGİSTERDAN SONRA ALINACAK.
+   
   }
 
-  saveData(String uid, DateTime time) {
+  saveData(String uid, DateTime time) async {
     var tempDate = DateTime(time.year, time.month);
     var secData = Map<String, bool>();
 
@@ -42,7 +41,7 @@ class Firebase {
         .catchError((err) => print(err));
   }
 
-  setDataFromSnapShot(DocumentSnapshot snapShot) {
+  setDataFromSnapShot(DocumentSnapshot snapShot) async {
     var data = snapShot.data;
     var listMount = Map<DateTime, Map<int, bool>>();
     var uid = data["uid"].toString();
@@ -76,14 +75,14 @@ class Firebase {
     return _auth.signInWithEmailAndPassword(email: email, password: pw);
   }
 
-  Future<void> addUserUidToUsers(AuthResult result) {
+  Future<void> addUserUidToUsers(AuthResult result) async {
     return _fireStore
         .collection("Users")
         .document(result.user.uid)
         .setData({"uid": result.user.uid});
   }
 
-  Future<FirebaseUser> checkUser() {
+  Future<FirebaseUser> checkUser() async {
    return  _auth.currentUser();
   }
 

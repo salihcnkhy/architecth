@@ -71,8 +71,6 @@ class _HomePageState extends State<HomePage> {
       case 7:
         weekDay = "Pazar";
         break;
-
-        break;
       default:
     }
 

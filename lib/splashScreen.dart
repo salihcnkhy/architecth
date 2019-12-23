@@ -1,7 +1,5 @@
-import 'dart:async';
 
 import 'package:architech1/Firebase.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import 'HomePage.dart';
@@ -43,6 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
         } else if (value.connectionState == ConnectionState.waiting) {
           return _waitPhoto();
         }
+        return Container();
       },
     );
   }
